@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import ButtonsContainer from "./buttons/ButtonsContainer";
 
 const HeaderMiddleContainer = () => {
   return (
     <div className="flex justify-center items-center h-20 shadow-md">
-      <div className="max-w-screen-2xl w-full flex items-center justify-between w-[90vw]">
+      <div className="max-w-screen-2xl flex items-center justify-between w-[90vw]">
         <div className="medium-header-logo">
           <Image
             alt="Logo Maeztra"
@@ -27,28 +28,7 @@ const HeaderMiddleContainer = () => {
           </button>
         </div>
 
-        <div className="flex items-center">
-          <section className="flex items-center">
-            <div>icon user</div>
-            <a href="#" className="text-gray font-normal text-sm pl-2">
-              Minha Conta
-            </a>
-          </section>
-
-          <section className="flex items-center">
-            <div>icon heart</div>
-            <a href="#" className="text-gray font-normal text-sm pl-2">
-              Minha Conta
-            </a>
-          </section>
-
-          <section className="flex items-center">
-            <div>icon bag</div>
-            <a href="#" className="text-gray font-normal text-sm pl-2">
-              Meu Carrinho
-            </a>
-          </section>
-        </div>
+        <ButtonsContainer />
       </div>
     </div>
   );
