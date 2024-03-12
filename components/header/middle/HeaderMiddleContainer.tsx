@@ -2,7 +2,36 @@ import React from 'react'
 
 const HeaderMiddleContainer = () => {
   return (
-    <div>HeaderMiddleContainer</div>
+    <div className="flex justify-center items-center h-20 shadow-md">
+  <div className="max-w-screen-xl w-full flex items-center justify-between">
+    <div className="medium-header-logo">
+      <img src="" alt="Logo Maeztra" />
+    </div>
+    
+    <div className="flex items-center relative">
+      <input type="text" placeholder="O Que Você Busca?" className="bg-light-gray border-0 rounded-l-lg px-4 h-10 text-sm font-normal text-gray max-w-md w-full" />
+      
+      <button className="bg-orange border-0 rounded-r-lg h-10 w-28 cursor-pointer text-white text-sm font-normal">Buscar</button>
+    </div>
+    
+    <div className="flex items-center">
+      <section className="flex items-center">
+        <div>icon user</div>
+        <a href="#" className="text-gray font-normal text-sm pl-2">Minha Conta</a>
+      </section>
+      
+      <section className="flex items-center">
+        <div>icon heart</div>
+        <a href="#" className="text-gray font-normal text-sm pl-2">Minha Conta</a>
+      </section>
+      
+      <section className="flex items-center">
+        <div>icon bag</div>
+        <a href="#" className="text-gray font-normal text-sm pl-2">Meu Carrinho</a>
+      </section>
+    </div>
+  </div>      
+</div>
   )
 }
 
