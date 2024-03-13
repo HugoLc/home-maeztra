@@ -2,13 +2,13 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <div className="newsletter border-t border-light-gray border-b">
-      <div className="newsletter-content flex justify-center items-center px-6 md:px-32 py-10 max-w-screen-xl mx-auto">
+    <div className=" border-t border-light-gray border-b">
+      <div className="flex justify-center items-center px-6 md:px-32 py-8 max-w-screen-xl mx-auto">
         <p className="text-gray text-lg font-bold max-w-[307px] w-full pr-4 md:pr-0">
           Receba Nossa Newsletter
         </p>
 
-        <form className="newsletter-content-form flex w-full">
+        <form className="flex w-full">
           <input
             type="text"
             placeholder="Digite seu e-mail"
