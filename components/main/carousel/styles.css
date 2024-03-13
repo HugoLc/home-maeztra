@@ -1,0 +1,41 @@
+.main-carousel .slick-prev {
+  left: 10vw !important;
+  z-index: 9;
+}
+.main-carousel .slick-prev::before {
+  content: url("../../../public/icons/icon-prev.svg") !important;
+  opacity: 1;
+}
+
+.main-carousel .slick-next {
+  right: 10vw !important;
+  z-index: 9;
+}
+
+.main-carousel .slick-next::before {
+  content: url("../../../public/icons/icon-next.svg") !important;
+  opacity: 1;
+}
+
+.main-carousel .slick-dots {
+  bottom: 30px !important;
+  z-index: 9;
+}
+.main-carousel ul.slick-dots li button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #faa500;
+  background-color: transparent;
+  opacity: 1;
+}
+.main-carousel ul.slick-dots li.slick-active button {
+  width: 16px;
+  height: 16px;
+  background-color: #faa500;
+  border-radius: 50%;
+}
+
+.main-carousel ul.slick-dots li button::before {
+  content: "" !important;
+}
