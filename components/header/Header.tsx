@@ -6,8 +6,7 @@ const Header = () => {
   return (
     <div>
       <TopBar />
-      <ToggleHeader />
-      
+      <ToggleHeader />     
     </div>
   );
 };

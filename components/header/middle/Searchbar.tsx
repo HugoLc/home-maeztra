@@ -2,7 +2,7 @@ import React from "react";
 
 const Searchbar = () => {
   return (
-    <div className="flex flex-1 items-center relative w-2/4 mx-5">
+    <div className="flex flex-1 items-center relative w-2/4 mx-5 max-w-3xl">
       <input
         type="text"
         placeholder="O Que Você Busca?"

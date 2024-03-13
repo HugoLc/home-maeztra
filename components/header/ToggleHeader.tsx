@@ -1,22 +1,27 @@
 "use client";
-import React from "react";
-import HeaderMiddleContainer from "./middle/HeaderMiddleContainer";
-import Menu from "./bottom/Menu";
+import React, { Suspense, lazy } from "react";
 import { useBreakpoints } from "../hooks/useBreakpoints";
-import HeaderMobile from "./middle/HeaderMobile";
+const HeaderMobile = lazy(() => import("./middle/mobile/HeaderMobile"));
+const Menu = lazy(() => import("./bottom/Menu"));
+const HeaderMiddleContainer = lazy(
+  () => import("./middle/HeaderMiddleContainer")
+);
 
 const ToggleHeader = () => {
-  const { isSm } = useBreakpoints();
-  //TODO: usar suspense
+  //TODO: revisar performance com media query
+  const { isXs } = useBreakpoints();
+  if (isXs === undefined) return <div className="w-full h-20" />;
   return (
     <>
-      {isSm ? (
-        <HeaderMobile />
+      {isXs ? (
+        <Suspense fallback={<div className="w-full h-20" />}>
+          <HeaderMobile />
+        </Suspense>
       ) : (
-        <>
+        <Suspense fallback={<div className="w-full h-20" />}>
           <HeaderMiddleContainer />
           <Menu />
-        </>
+        </Suspense>
       )}
     </>
   );
