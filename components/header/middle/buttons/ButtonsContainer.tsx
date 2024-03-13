@@ -13,7 +13,7 @@ const ButtonsContainer = () => {
           loading="eager"
           className="h-4"
         />
-        <HeaderButton.Text className="text-gray font-normal text-sm pl-2">
+        <HeaderButton.Text className="text-gray font-normal text-sm pl-2 hidden lg:block">
           Minha Conta
         </HeaderButton.Text>
       </HeaderButton.Root>
@@ -26,7 +26,7 @@ const ButtonsContainer = () => {
           loading="eager"
           className="h-4"
         />
-        <HeaderButton.Text className="text-gray font-normal text-sm pl-2">
+        <HeaderButton.Text className="text-gray font-normal text-sm pl-2 hidden lg:block">
           Favoritos
         </HeaderButton.Text>
       </HeaderButton.Root>
@@ -39,7 +39,7 @@ const ButtonsContainer = () => {
           loading="eager"
           className="h-4"
         />
-        <HeaderButton.Text className="text-gray font-normal text-sm pl-2">
+        <HeaderButton.Text className="text-gray font-normal text-sm pl-2 hidden lg:block">
           Meu Carrinho
         </HeaderButton.Text>
       </HeaderButton.Root>
