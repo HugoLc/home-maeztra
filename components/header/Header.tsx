@@ -1,14 +1,13 @@
 import React from "react";
 import TopBar from "./top/TopBar";
-import HeaderMiddleContainer from "./middle/HeaderMiddleContainer";
-import Menu from "./bottom/Menu";
+import ToggleHeader from "./ToggleHeader";
 //TODO: animações
 const Header = () => {
   return (
     <div>
       <TopBar />
-      <HeaderMiddleContainer />
-      <Menu />
+      <ToggleHeader />
+      
     </div>
   );
 };
