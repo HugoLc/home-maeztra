@@ -7,7 +7,11 @@ const HeaderButtonRoot = ({
   children,
   ...props
 }: HearderButtonProps) => {
-  return <button className={className}>{children}</button>;
+  return (
+    <button className={className} {...props}>
+      {children}{" "}
+    </button>
+  );
 };
 
 export default HeaderButtonRoot;
