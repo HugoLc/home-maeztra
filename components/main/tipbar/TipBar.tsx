@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { dataTipbar } from "./mock";
 import "./styles.css";
+import DraggableScroll from "@/components/general/DraggableScroll";
 
 const TipBar = () => {
   return (
     <section>
       <p className="text-base font-bold text-gray-700 py-6 text-center">
-        Título
+        Por que comprar na Maeztra?
       </p>
-      <div className="flex items-center justify-left w-[90vw] m-auto  scrollbar-hidden gap-4">
+      <DraggableScroll>
         {dataTipbar.map((tip) => (
-          <div className="">
+          <div className="" key={tip.id}>
             <div className=" max-w-screen-xl w-full mx-auto">
               <div className=" flex items-center justify-center">
                 <div className="min-w-[307px] flex items-center bg-gray-200 rounded-md flex-none h-16 px-7 max-w-xs">
@@ -28,7 +29,7 @@ const TipBar = () => {
             </div>
           </div>
         ))}
-      </div>
+      </DraggableScroll>
     </section>
   );
 };
