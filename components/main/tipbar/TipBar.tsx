@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { dataTipbar } from "./mock";
-import "./styles.css";
+import "../../general/styles.css";
 import DraggableScroll from "@/components/general/DraggableScroll";
 
 const TipBar = () => {

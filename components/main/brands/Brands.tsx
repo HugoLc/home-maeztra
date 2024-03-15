@@ -1,9 +1,32 @@
-import React from 'react'
+import DraggableScroll from "@/components/general/DraggableScroll";
+import React from "react";
 
 const Brands = () => {
+  const data = [
+    { id: Math.random(), img: "/icons/brand-comma.svg" },
+    { id: Math.random(), img: "/icons/brand-melissa.svg" },
+    { id: Math.random(), img: "/icons/brand-forever.svg" },
+    { id: Math.random(), img: "/img/brand-zara.png" },
+    { id: Math.random(), img: "/icons/brand-ann-taylor.svg" },
+  ];
   return (
-    <div>Brands</div>
-  )
-}
+    <section className="container-brands m-16">
+      <p className="text-2xl font-bold text-gray-700 text-center mb-6 md:text-3xl md:mb-8">
+        Marcas Parceiras
+      </p>
 
-export default Brands
+      <DraggableScroll>
+        {data.map((item) => (
+          <div
+            className="min-w-[307px] w-[307px] flex justify-center"
+            key={item.id}
+          >
+            <img src={item.img} alt="brand" className="w-full" />
+          </div>
+        ))}
+      </DraggableScroll>
+    </section>
+  );
+};
+
+export default Brands;
