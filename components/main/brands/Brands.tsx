@@ -2,6 +2,7 @@ import DraggableScroll from "@/components/general/DraggableScroll";
 import React from "react";
 
 const Brands = () => {
+  //TODO: mudar imagens
   const data = [
     { id: Math.random(), img: "/icons/brand-comma.svg" },
     { id: Math.random(), img: "/icons/brand-melissa.svg" },
