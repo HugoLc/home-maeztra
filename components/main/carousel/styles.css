@@ -1,5 +1,6 @@
+/* TODO: arrumar arrows */
 .main-carousel .slick-prev {
-  left: 10vw !important;
+  left: 5vw !important;
   z-index: 9;
 }
 .main-carousel .slick-prev::before {
@@ -8,7 +9,7 @@
 }
 
 .main-carousel .slick-next {
-  right: 10vw !important;
+  right: 5vw !important;
   z-index: 9;
 }
 
