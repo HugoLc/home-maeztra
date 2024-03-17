@@ -9,7 +9,7 @@ const ShelfSlider = ({ products }: { products: Product[] }) => {
     dots: false,
     arrows: true,
     lazyLoad: "anticipated",
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -22,9 +22,23 @@ const ShelfSlider = ({ products }: { products: Product[] }) => {
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 1400,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 705,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -36,12 +50,12 @@ const ShelfSlider = ({ products }: { products: Product[] }) => {
     <Slider {...settings}>
       {products.map((product) => (
         <ProductSummary.Root
-          className={"mr-4 min-w-[307px] max-w-[307px]"}
+          className={" min-w-[307px] max-w-[307px]"}
           product={product}
           key={product.productId}
         >
           <ProductSummary.Image />
-          <div className="py-2 px-3">
+          <div className="py-2 px-7">
             <ProductSummary.SkuSelector />
             <ProductSummary.Price className="mt-1 text-xl font-bold" />
             <ProductSummary.Name className="mt-1 text-base text-black" />

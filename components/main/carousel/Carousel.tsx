@@ -19,19 +19,23 @@ const Carousel = () => {
   return (
     <>
       <section className="main-carousel hidden md:block">
-        <Slider {...settings}>
-          {CAROUSEL.map((slide, index) => (
-            <Image
-              key={slide.key}
-              src={slide.img}
-              alt="Banner principal"
-              className=""
-              loading={index === 0 ? "eager" : "lazy"}
-              width={1920}
-              height={600}
-            />
-          ))}
-        </Slider>
+        {CAROUSEL.length ? (
+          <Slider {...settings}>
+            {CAROUSEL.map((slide, index) => (
+              <Image
+                key={slide.key}
+                src={slide.img}
+                alt="Banner principal"
+                className=""
+                loading={index === 0 ? "eager" : "lazy"}
+                width={1920}
+                height={600}
+              />
+            ))}
+          </Slider>
+        ) : (
+          <></>
+        )}
       </section>
       <section className="main-carousel block md:hidden">
         <Slider {...settings}>

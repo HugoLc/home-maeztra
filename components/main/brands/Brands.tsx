@@ -11,7 +11,7 @@ const Brands = () => {
     { id: Math.random(), img: "/icons/brand-ann-taylor.svg" },
   ];
   return (
-    <section className="container-brands m-16">
+    <section className="container-brands m-auto">
       <p className="text-2xl font-bold text-gray-700 text-center mb-6 md:text-3xl md:mb-8">
         Marcas Parceiras
       </p>

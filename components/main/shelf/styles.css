@@ -1,5 +1,6 @@
 .shelf-container .slick-slide {
-  width: auto !important;
+  display: flex;
+  justify-content: center;
 }
 
 .shelf-container .slick-prev {
