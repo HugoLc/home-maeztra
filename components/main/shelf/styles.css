@@ -1,10 +1,10 @@
 .shelf-container .slick-slide {
-  display: flex;
+  display: flex !important;
   justify-content: center;
 }
 
 .shelf-container .slick-prev {
-  left: 0px !important;
+  left: 8px !important;
   z-index: 9;
 }
 .shelf-container .slick-prev::before {
@@ -13,7 +13,7 @@
 }
 
 .shelf-container .slick-next {
-  right: 0px !important;
+  right: 8px !important;
   z-index: 9;
 }
 

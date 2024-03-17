@@ -5,10 +5,12 @@ import Shelf from "@/components/main/shelf/Shelf";
 import TipBar from "@/components/main/tipbar/TipBar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { PopUp } from "@/components/pop-ups/newsletter";
 
 export default function Home() {
   return (
     <>
+      <PopUp />
       <Carousel />
       <TipBar />
       <Brands />

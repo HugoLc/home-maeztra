@@ -1,6 +1,6 @@
 /* TODO: arrumar arrows */
 .main-carousel .slick-prev {
-  left: 5vw !important;
+  left: 9vw !important;
   z-index: 9;
 }
 .main-carousel .slick-prev::before {
@@ -9,7 +9,7 @@
 }
 
 .main-carousel .slick-next {
-  right: 5vw !important;
+  right: 9vw !important;
   z-index: 9;
 }
 
@@ -39,4 +39,13 @@
 
 .main-carousel ul.slick-dots li button::before {
   content: "" !important;
+}
+
+@media screen and (max-width: 640px) {
+  .main-carousel .slick-prev {
+    left: 5vw !important;
+  }
+  .main-carousel .slick-next {
+    right: 5vw !important;
+  }
 }
