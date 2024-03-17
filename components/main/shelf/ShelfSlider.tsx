@@ -50,18 +50,18 @@ const ShelfSlider = ({ products }: { products: Product[] }) => {
     <Slider {...settings}>
       {products.map((product) => (
         <ProductSummary.Root
-          className={" min-w-[307px] max-w-[307px]"}
+          className={" min-w-[307px] max-w-[307px] !h-full"}
           product={product}
           key={product.productId}
         >
           <ProductSummary.Image />
           {/* <div className="grow" /> */}
-          <div className="py-2 px-7 flex flex-col ">
-            <ProductSummary.SkuSelector />
-            <ProductSummary.Price className="mt-1 text-xl font-bold" />
-            <ProductSummary.Name className="mt-1 text-base text-black" />
-            <ProductSummary.Description className="mt-1 text-xs" />
-            {/* <div className="grow" /> */}
+          <ProductSummary.SkuSelector />
+          <ProductSummary.Price className="mt-1 text-xl font-bold px-7" />
+          <ProductSummary.Name className="mt-1 text-base text-black px-7" />
+          <ProductSummary.Description className="mt-1 text-xs px-7" />
+          {/* <div className="grow" /> */}
+          <div className="px-7 grow flex items-end">
             <ProductSummary.AddToCart className="bg-[#FAA500] text-white outline-none rounded-[4px] mt-2 w-full p-2" />
           </div>
         </ProductSummary.Root>

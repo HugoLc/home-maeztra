@@ -15,7 +15,7 @@ const ShelfRoot = ({
 }: ShelfRootProps) => {
   return (
     <ProductProvider productData={product}>
-      <div className={`flex flex-col ${className}`} {...props}>
+      <div className={`!flex flex-col ${className}`} {...props}>
         {children}
       </div>
     </ProductProvider>
