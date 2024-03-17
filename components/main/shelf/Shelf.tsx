@@ -1,19 +1,19 @@
 import { Product } from "@/typings/products";
 import React from "react";
-import { ProductSummary } from "./items/ProductSummary";
+import ShelfSlider from "./ShelfSlider";
+import "./styles.css";
 
 const Shelf = async () => {
   const products = await getProductsData();
-  return products.map((product) => (
-    <ProductSummary.Root product={product}>
-      <ProductSummary.Image />
-      <ProductSummary.SkuSelector />
-      <ProductSummary.Price />
-      <ProductSummary.Name />
-      <ProductSummary.Description />
-      <ProductSummary.AddToCart />
-    </ProductSummary.Root>
-  ));
+
+  return (
+    <section className="shelf-container m-auto max-w-[1596px] w-[90vw] mb-12">
+      <h2 className="text-2xl font-bold text-gray-700 text-center mb-6 md:text-3xl md:mb-8">
+        As Mais Pedidas
+      </h2>
+      <ShelfSlider products={products} />
+    </section>
+  );
 };
 
 export default Shelf;

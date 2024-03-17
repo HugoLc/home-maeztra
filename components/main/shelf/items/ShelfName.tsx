@@ -3,11 +3,11 @@
 import React from "react";
 import { useProductContext } from "../context/ProductContext";
 
-const ShelfName = () => {
+const ShelfName = ({ ...props }: React.ComponentProps<"img">) => {
   const {
     product: { selectedSku },
   } = useProductContext();
-  return <div>{selectedSku.name}</div>;
+  return <div {...props}>{selectedSku.name}</div>;
 };
 
 export default ShelfName;

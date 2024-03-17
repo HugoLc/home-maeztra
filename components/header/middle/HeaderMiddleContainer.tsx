@@ -7,7 +7,7 @@ import Searchbar from "./Searchbar";
 const HeaderMiddleContainer = () => {
   return (
     <div className="flex justify-center items-center h-20 shadow-md">
-      <div className="max-w-screen-2xl flex items-center justify-between w-[90vw]">
+      <div className="max-w-[1596px] flex items-center justify-between w-[90vw]">
         <Logo />
         <Searchbar />
         <ButtonsContainer />

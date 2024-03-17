@@ -6,7 +6,8 @@ import Image from "next/image";
 import "./styles.css";
 
 const Carousel = () => {
-  var settings: Settings = {
+  //TODO: arrumar usando uma fonte de dados e uma imagem do imageset
+  const settings: Settings = {
     dots: true,
     arrows: true,
     lazyLoad: "anticipated",

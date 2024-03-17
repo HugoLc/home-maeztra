@@ -1,10 +1,17 @@
 "use client";
-import React from 'react'
+import React from "react";
+import { useProductContext } from "../context/ProductContext";
+import SkuItem from "./sku-item/SkuItem";
 
 const ShelfSkuSelector = () => {
+  const { product } = useProductContext();
   return (
-    <div>ShelfSkuSelector</div>
-  )
-}
+    <div className="flex gap-2">
+      {product.skus.map((sku) => (
+        <SkuItem sku={sku} />
+      ))}
+    </div>
+  );
+};
 
-export default ShelfSkuSelector
+export default ShelfSkuSelector;

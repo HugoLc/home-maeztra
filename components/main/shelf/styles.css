@@ -1,0 +1,22 @@
+.shelf-container .slick-slide {
+  width: auto !important;
+}
+
+.shelf-container .slick-prev {
+  left: 0px !important;
+  z-index: 9;
+}
+.shelf-container .slick-prev::before {
+  content: url("../../../public/icons/icon-prev.svg") !important;
+  opacity: 1;
+}
+
+.shelf-container .slick-next {
+  right: 0px !important;
+  z-index: 9;
+}
+
+.shelf-container .slick-next::before {
+  content: url("../../../public/icons/icon-next.svg") !important;
+  opacity: 1;
+}

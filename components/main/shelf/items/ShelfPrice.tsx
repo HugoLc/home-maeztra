@@ -1,15 +1,13 @@
 "use client";
 
-import React from 'react'
-import { useProductContext } from '../context/ProductContext';
+import React from "react";
+import { useProductContext } from "../context/ProductContext";
 
-const ShelfPrice = () => {
-    const {
-        product: { selectedSku },
-      } = useProductContext();
-  return (
-    <div>{selectedSku.price}</div>
-  )
-}
+const ShelfPrice = ({ ...props }: React.ComponentProps<"img">) => {
+  const {
+    product: { selectedSku },
+  } = useProductContext();
+  return <div {...props}>{`R$ ${selectedSku.price}`.replace(".", ",")}</div>;
+};
 
-export default ShelfPrice
+export default ShelfPrice;

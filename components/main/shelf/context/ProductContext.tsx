@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState } from "react";
 
 type ProductContextType = {
   product: IProductContext;
-  setProduct: (product: IProductContext) => void;
+  setProduct: React.Dispatch<React.SetStateAction<IProductContext>>;
 };
 
 const ProductContext = createContext<ProductContextType | undefined>(undefined);

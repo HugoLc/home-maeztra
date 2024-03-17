@@ -2,9 +2,9 @@
 import React from "react";
 import { useProductContext } from "../context/ProductContext";
 
-const ShelfDescription = () => {
+const ShelfDescription = ({ ...props }: React.ComponentProps<"img">) => {
   const { product } = useProductContext();
-  return <div>{product.description}</div>;
+  return <p {...props}>{product.description}</p>;
 };
 
 export default ShelfDescription;
