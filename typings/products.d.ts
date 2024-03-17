@@ -22,6 +22,7 @@ export interface Image {
   name: string;
   skuId: string;
   created_at: string;
+  image_url: string;
 }
 
 export interface IProductContext extends Product {

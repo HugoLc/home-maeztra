@@ -2,16 +2,19 @@
 
 import React from "react";
 import { useProductContext } from "../context/ProductContext";
+import Image from "next/image";
 
-const ShelfImage = ({ ...props }: React.ComponentProps<"img">) => {
+const ShelfImage = () => {
   const {
     product: { selectedSku },
   } = useProductContext();
   return (
-    <img
-      src={selectedSku?.images[0].imageId}
+    <Image
+      src={selectedSku?.images[0].image_url}
       alt={selectedSku?.images[0].name}
-      {...props}
+      width={308}
+      height={381}
+      loading="lazy"
     />
   );
 };

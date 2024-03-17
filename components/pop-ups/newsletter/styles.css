@@ -25,7 +25,6 @@
   cursor: pointer;
   font-size: 12px;
   font-weight: 400;
-  font-family: var(--font-primary);
   color: white;
   text-transform: uppercase;
 }
@@ -52,8 +51,7 @@
 .content-popup form .welcome {
   font-size: 12px;
   font-weight: 400;
-  font-family: var(--font-primary);
-  color: var(--color-gray-strong);
+  color: #464b54;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
@@ -61,15 +59,15 @@
 .content-popup form .greetings {
   font-size: 20px;
   font-weight: 400;
-  font-family: var(--font-primary);
-  color: var(--color-gray-light-strong);
+  color: #787d83;
+  text-align: center;
   margin-bottom: 25px;
+  line-height: 1.5rem;
 }
 
 .content-popup form .greetings strong {
   font-size: 20px;
   font-weight: bold;
-  color: var(--color-gray-light-strong);
 }
 
 .content-popup form input {
@@ -79,8 +77,6 @@
   padding: 10px 13px;
   font-size: 12px;
   font-weight: 400;
-  font-family: var(--font-primary);
-  color: var(--color-gray-light-strong);
   margin-bottom: 10px;
 }
 
@@ -90,16 +86,19 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: var(--color-orange);
+  background: #faa500;
   width: 100%;
   border: 0;
   border-radius: 10px;
   height: 40px;
   font-size: 12px;
   font-weight: bold;
-  font-family: var(--font-primary);
-  color: var(--color-white);
+  color: white;
   text-transform: uppercase;
+}
+
+.content-popup form button img {
+  margin: 0;
 }
 
 @media (max-width: 1024px) {

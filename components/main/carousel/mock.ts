@@ -1,5 +1,5 @@
-const BANNER = "/img/banner.png";
-const BANNER_MOB = "/img/banner-mobile.png";
+import BANNER from "@/public/img/Banner.png";
+import BANNER_MOB from "@/public/img/banner-mobile.png";
 
 export const CAROUSEL = [
   { key: "d1", img: BANNER },

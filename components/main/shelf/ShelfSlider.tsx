@@ -55,11 +55,13 @@ const ShelfSlider = ({ products }: { products: Product[] }) => {
           key={product.productId}
         >
           <ProductSummary.Image />
-          <div className="py-2 px-7">
+          {/* <div className="grow" /> */}
+          <div className="py-2 px-7 flex flex-col ">
             <ProductSummary.SkuSelector />
             <ProductSummary.Price className="mt-1 text-xl font-bold" />
             <ProductSummary.Name className="mt-1 text-base text-black" />
             <ProductSummary.Description className="mt-1 text-xs" />
+            {/* <div className="grow" /> */}
             <ProductSummary.AddToCart className="bg-[#FAA500] text-white outline-none rounded-[4px] mt-2 w-full p-2" />
           </div>
         </ProductSummary.Root>

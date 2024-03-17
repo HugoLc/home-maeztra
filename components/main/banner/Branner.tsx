@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 //TODO: mudar Image
 const Branner = () => {
@@ -5,7 +6,7 @@ const Branner = () => {
     <section className="my-20 md:mt-8">
       <div className="flex flex-col w-[90vw] lg:flex-row items-center justify-center mx-auto">
         <div className="max-w-[90vw] lg:max-w-md mb-3 lg:mb-0 lg:mr-8">
-          <h3 className="text-2xl font-bold mb-4 md:text-xl">Lorem ipsum </h3>
+          <h4 className="text-2xl font-bold mb-4 md:text-xl">Lorem ipsum </h4>
           <p className="text-sm font-medium leading-relaxed mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum
             mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim
@@ -20,10 +21,12 @@ const Branner = () => {
         </div>
 
         <div className="md:w-auto">
-          <img
+          <Image
             src="/img/new-collection.png"
             alt="Banner Coleção"
             className="w-full"
+            width={1114}
+            height={480}
           />
         </div>
       </div>

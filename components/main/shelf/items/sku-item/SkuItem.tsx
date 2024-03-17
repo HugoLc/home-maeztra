@@ -8,16 +8,6 @@ interface Props extends React.ComponentProps<"button"> {
 
 const SkuItem = ({ sku, ...props }: Props) => {
   const { product, setProduct } = useProductContext();
-  console.log(sku.color);
-  const color = useMemo(() => {
-    if (sku.color === "Amarelo") {
-      return "bg-amber-400";
-    } else if (sku.color === "Azul") {
-      return "bg-cyan-600";
-    } else {
-      return "";
-    }
-  }, [sku]);
   const isSelected = useMemo(
     () => product.selectedSku.skuId === sku.skuId,
     [sku, product.selectedSku]
@@ -29,11 +19,10 @@ const SkuItem = ({ sku, ...props }: Props) => {
   };
   return (
     <button
-      className={`${color} w-7 h-7 ${
-        isSelected ? "border" : ""
-      } border-black rounded`}
+      className={`w-7 h-7 ${isSelected ? "border" : ""} border-black rounded`}
       onClick={() => handleSkuSlection()}
       {...props}
+      style={{ backgroundColor: sku.color }}
     ></button>
   );
 };

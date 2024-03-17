@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 
 import { Modal } from "./Modal";
+import Image from "next/image";
 
 export function PopUp() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -23,14 +24,23 @@ export function PopUp() {
     <div>
       <Modal isOpen={modalIsOpen} onClose={handleCloseModal}>
         <div className="content-popup">
-          <img
+          <Image
             src="/img/bg-newsletter.svg"
             alt="Imagem do popup"
+            loading="lazy"
+            width={426}
+            height={532}
             className="banner-popup"
           />
 
           <form>
-            <img src="/icons/newsletter-mail-icon.svg" alt="Logo envelope" />
+            <Image
+              src="/icons/newsletter-mail-icon.svg"
+              alt="Logo envelope"
+              width={30}
+              height={30}
+              loading="lazy"
+            />
 
             <p className="welcome">Bem Vindo à MAEZTRA</p>
 
@@ -41,7 +51,16 @@ export function PopUp() {
 
             <input type="text" placeholder="Digite seu e-mail" />
 
-            <button>Enviar</button>
+            <button className="flex bg-[#FAA500] rounded">
+              Enviar{" "}
+              <Image
+                alt="send icon"
+                src="/icons/send.svg"
+                loading="lazy"
+                width={12}
+                height={20}
+              />
+            </button>
           </form>
         </div>
       </Modal>

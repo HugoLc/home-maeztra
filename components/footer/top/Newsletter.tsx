@@ -4,9 +4,9 @@ const Newsletter = () => {
   return (
     <div className=" border-t border-light-gray border-b">
       <div className="flex justify-center flex-col sm:flex-row items-center px-6 md:px-32 py-8 max-w-screen-xl mx-auto">
-        <p className="text-gray text-2xl text-center sm:text-left mb-4 sm:mb-0 font-bold max-w-[307px] w-full pr-4 md:pr-0">
+        <h5 className="text-gray text-2xl text-center sm:text-left mb-4 sm:mb-0 font-bold max-w-[307px] w-full pr-4 md:pr-0">
           Receba Nossa Newsletter
-        </p>
+        </h5>
 
         <form className="flex w-full justify-between">
           <input

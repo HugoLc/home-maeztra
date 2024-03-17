@@ -18,7 +18,7 @@ const Carousel = () => {
   };
   return (
     <>
-      <section className="main-carousel hidden md:block">
+      <section className="main-carousel hidden md:block min-h-[600]">
         {CAROUSEL.length ? (
           <Slider {...settings}>
             {CAROUSEL.map((slide, index) => (
@@ -26,10 +26,11 @@ const Carousel = () => {
                 key={slide.key}
                 src={slide.img}
                 alt="Banner principal"
-                className=""
                 loading={index === 0 ? "eager" : "lazy"}
                 width={1920}
                 height={600}
+                priority={index === 0 ? true : false}
+                placeholder="blur"
               />
             ))}
           </Slider>
@@ -37,7 +38,7 @@ const Carousel = () => {
           <></>
         )}
       </section>
-      <section className="main-carousel block md:hidden">
+      <section className="main-carousel block md:hidden min-h-[320]">
         <Slider {...settings}>
           {CAROUSEL_MOBILE.map((slide, index) => (
             <Image
@@ -45,9 +46,10 @@ const Carousel = () => {
               src={slide.img}
               alt="Banner principal"
               loading={index === 0 ? "eager" : "lazy"}
-              className=""
-              width={1920}
-              height={600}
+              width={360}
+              height={320}
+              priority={index === 0 ? true : false}
+              placeholder="blur"
             />
           ))}
         </Slider>

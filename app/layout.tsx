@@ -3,6 +3,7 @@ import { Titillium_Web } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Head from "next/head";
 
 const titilliumWeb = Titillium_Web({
   subsets: ["latin"],
