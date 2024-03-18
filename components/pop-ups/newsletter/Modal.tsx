@@ -6,7 +6,7 @@ export function Modal({ isOpen, onClose, children }: any) {
   return (
     <div className="modal-overlay">
       <div className="modal">
-        <button className="close-button" onClick={onClose}>
+        <button className="close-button" onClick={onClose} aria-label="fechar">
           Fechar
         </button>
         {children}

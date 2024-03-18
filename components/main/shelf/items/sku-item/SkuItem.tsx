@@ -23,6 +23,7 @@ const SkuItem = ({ sku, ...props }: Props) => {
       onClick={() => handleSkuSlection()}
       {...props}
       style={{ backgroundColor: sku.color }}
+      aria-label={sku.name}
     ></button>
   );
 };
