@@ -50,7 +50,7 @@ const ShelfSlider = ({ products }: { products: Product[] }) => {
     <Slider {...settings}>
       {products.map((product) => (
         <ProductSummary.Root
-          className={" min-w-[307px] max-w-[307px]"}
+          className={"max-w-[307px]"}
           product={product}
           key={product.productId}
         >

@@ -2,6 +2,7 @@ import { Product } from "@/typings/products";
 import React from "react";
 import ShelfSlider from "./ShelfSlider";
 import "./styles.css";
+import ShelfSliderSwipper from "./ShelfSliderSwipper";
 
 const Shelf = async () => {
   const products = await getProductsData();
@@ -11,7 +12,7 @@ const Shelf = async () => {
       <h2 className="text-2xl font-bold text-gray-700 text-center mb-6 md:text-3xl md:mb-8">
         As Mais Pedidas
       </h2>
-      <ShelfSlider products={products} />
+      <ShelfSliderSwipper products={products} />
     </section>
   );
 };
