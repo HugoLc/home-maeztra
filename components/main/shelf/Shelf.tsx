@@ -19,7 +19,9 @@ const Shelf = async () => {
 export default Shelf;
 
 async function getProductsData(): Promise<Product[]> {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch(
+    "https://ecommerce-study.onrender.com/products/productByCategoryId/855ea256-a205-4b7f-91ed-747de6d351f3"
+  );
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
