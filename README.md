@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://dub.co">
+  <img alt="Site preview" src="./public/img/preview.png">
+  <h1 align="center">Teste Técnico Maeztra - Hugo</h1>
+</a>
 
-## Getting Started
+<p align="center">
+  Teste técnico realizado durante processo seletivo para vage de Front End na Maeztra
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://twitter.com/dubdotco">
+    <img src="https://img.shields.io/twitter/follow/dubdotco?style=flat&label=%40dubdotco&logo=twitter&color=0bf&logoColor=fff" alt="Twitter" />
+  </a>
+  <a href="https://news.ycombinator.com/item?id=32939407"><img src="https://img.shields.io/badge/Hacker%20News-255-%23FF6600" alt="Hacker News"></a>
+  <a href="https://github.com/dubinc/dub/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/dubinc/dub?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
+  </a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+  <a href="#introdução"><strong>Introdução</strong></a> ·
+  <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
+  <a href="#instruções-de-execução-do-projeto"><strong>Instruções de Execução do Projeto</strong></a>
+</p>
+<br/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introdução
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este é um projeto desenvolvido como parte de um teste técnico para uma vaga de Front-end na empresa Maeztra. O objetivo era criar uma página inicial e escolhi Next.js 13, uma ferramenta que oferece uma poderosa estrutura de aplicativo React para construir aplicações web escaláveis e de fácil manutenção.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Neste projeto, explorei minhas habilidades técnicas em desenvolvimento web, focando não apenas na implementação da página inicial, mas também na sua performance.
 
-## Learn More
+Este projeto serve como uma demonstração das minhas habilidades e capacidades em desenvolvimento Front-end, mostrando meu compromisso com a qualidade e performance.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/) – framework
+- [TypeScript](https://www.typescriptlang.org/) – language
+- [Tailwind](https://tailwindcss.com/) – CSS
+- [Render](https://render.com/) – backend hosting
+- [Postgres](https://www.postgresql.org/) – database
+- [uploadthing](https://uploadthing.com/) – images
+- [Vercel](https://vercel.com/) – deployments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Instruções de Execução do Projeto
 
-## Deploy on Vercel
+Este projeto foi desenvolvido utilizando Node.js na versão 18.17.0 e Next.js 13. Siga as instruções abaixo para executar o projeto em seu ambiente local:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Pré-requisitos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Node.js na versão 18.17.0 instalado em seu sistema. Você pode baixar e instalar o Node.js a partir do [site oficial](https://nodejs.org/).
+- Gerenciador de pacotes Yarn instalado globalmente. Se ainda não tiver o Yarn instalado, você pode encontrar instruções de instalação no [site oficial do Yarn](https://yarnpkg.com/getting-started/install).
+
+### Executando o Projeto
+
+1. Clone este repositório para o seu ambiente local:
+
+   ```bash
+   git clone https://github.com/HugoLc/home-maeztra.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd home-maeztra
+   ```
+
+3. Instale as dependências do projeto utilizando o Yarn:
+
+   ```bash
+   yarn
+   ```
+
+4. Após a conclusão da instalação das dependências, você pode iniciar o projeto em modo de desenvolvimento executando o seguinte comando:
+
+   ```bash
+   yarn dev
+   ```
+
+5. O servidor de desenvolvimento será iniciado e você poderá acessar o projeto em seu navegador através do seguinte endereço:
+
+   ```
+   http://localhost:3000
+   ```
+
+### Comandos Disponíveis
+
+- `yarn dev`: Inicia o servidor de desenvolvimento.
+- `yarn build`: Compila o projeto para produção.
+- `yarn start`: Inicia o servidor em modo de produção após a compilação.
+
+Certifique-se de que todas as dependências foram instaladas corretamente e que o ambiente está configurado de acordo com os pré-requisitos especificados acima antes de iniciar o projeto.
