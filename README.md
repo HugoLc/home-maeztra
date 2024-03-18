@@ -1,20 +1,10 @@
-<a href="#">
+<a href="https://home-maeztra-gdyt.vercel.app/">
   <img alt="Site preview" src="./public/img/preview.png">
   <h1 align="center">Teste Técnico Maeztra - Hugo</h1>
 </a>
 
 <p align="center">
-  Teste técnico realizado durante processo seletivo para vage de Front End na Maeztra
-</p>
-
-<p align="center">
-  <a href="https://twitter.com/dubdotco">
-    <img src="https://img.shields.io/twitter/follow/dubdotco?style=flat&label=%40dubdotco&logo=twitter&color=0bf&logoColor=fff" alt="Twitter" />
-  </a>
-  <a href="https://news.ycombinator.com/item?id=32939407"><img src="https://img.shields.io/badge/Hacker%20News-255-%23FF6600" alt="Hacker News"></a>
-  <a href="https://github.com/dubinc/dub/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/dubinc/dub?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
-  </a>
+  Teste técnico realizado durante processo seletivo para vaga de Front End na Maeztra
 </p>
 
 <p align="center">
