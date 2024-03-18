@@ -1,4 +1,4 @@
-<a href="https://dub.co">
+<a href="#">
   <img alt="Site preview" src="./public/img/preview.png">
   <h1 align="center">Teste Técnico Maeztra - Hugo</h1>
 </a>

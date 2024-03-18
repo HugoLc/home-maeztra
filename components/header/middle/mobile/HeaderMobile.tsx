@@ -12,7 +12,7 @@ const HeaderMobile = () => {
               alt="menu icon"
               width={24}
               height={24}
-              loading="eager"
+              loading="lazy"
             />
           </button>
           <Image
@@ -20,7 +20,7 @@ const HeaderMobile = () => {
             alt="Logo Maeztra"
             width={110}
             height={12}
-            loading="eager"
+            loading="lazy"
           />
         </section>
 
@@ -31,7 +31,7 @@ const HeaderMobile = () => {
               alt="search icon"
               width={24}
               height={24}
-              loading="eager"
+              loading="lazy"
             />
           </button>
           <button className="bg-transparent border-0 cursor-pointer">
@@ -40,7 +40,7 @@ const HeaderMobile = () => {
               alt="bag icon"
               width={24}
               height={24}
-              loading="eager"
+              loading="lazy"
             />
           </button>
         </section>

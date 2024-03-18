@@ -7,7 +7,7 @@ const Logo = () => {
       <Image
         alt="Logo Maeztra"
         src="/img/logo-maeztra.png"
-        loading="eager"
+        loading="lazy"
         width={147}
         height={18}
       />
