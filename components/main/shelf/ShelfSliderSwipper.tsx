@@ -2,7 +2,6 @@
 import { Product } from "@/typings/products";
 import React, { useEffect } from "react";
 import { ProductSummary } from "./items/ProductSummary";
-import Slider, { Settings } from "react-slick";
 import DemoSlider from "../carousel/Swipper";
 import { SwiperSlide } from "swiper/react";
 
