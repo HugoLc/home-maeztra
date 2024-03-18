@@ -1,7 +1,5 @@
 import { Product } from "@/typings/products";
 import React from "react";
-import ShelfSlider from "./ShelfSlider";
-import "./styles.css";
 import ShelfSliderSwipper from "./ShelfSliderSwipper";
 
 const Shelf = async () => {
