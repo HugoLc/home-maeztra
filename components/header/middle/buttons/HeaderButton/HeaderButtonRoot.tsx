@@ -8,7 +8,7 @@ const HeaderButtonRoot = ({
   ...props
 }: HearderButtonProps) => {
   return (
-    <button className={className} {...props}>
+    <button className={className} {...props} aria-label="header button">
       {children}{" "}
     </button>
   );

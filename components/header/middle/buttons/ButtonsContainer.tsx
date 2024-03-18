@@ -10,7 +10,7 @@ const ButtonsContainer = () => {
           src={"/icons/user-icon.svg"}
           width={20}
           height={20}
-          loading="eager"
+          loading="lazy"
           className="h-4"
         />
         <HeaderButton.Text className="text-gray font-normal text-sm pl-2 hidden lg:block">
@@ -23,7 +23,7 @@ const ButtonsContainer = () => {
           src={"/icons/heart-icon.svg"}
           width={20}
           height={20}
-          loading="eager"
+          loading="lazy"
           className="h-4"
         />
         <HeaderButton.Text className="text-gray font-normal text-sm pl-2 hidden lg:block">
@@ -36,7 +36,7 @@ const ButtonsContainer = () => {
           src={"/icons/bag-icon.svg"}
           width={20}
           height={20}
-          loading="eager"
+          loading="lazy"
           className="h-4"
         />
         <HeaderButton.Text className="text-gray font-normal text-sm pl-2 hidden lg:block">

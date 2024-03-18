@@ -15,7 +15,10 @@ const Newsletter = () => {
             className="w-2/3 sm:w-full h-10 border border-gray rounded-md px-6"
           />
 
-          <button className="bg-[#FAA500] ml-[-8px] h-10 max-w-[131px] w-full right-0 md:static rounded-md text-white font-bold text-lg">
+          <button
+            aria-label="Send newsletter"
+            className="bg-[#FAA500] ml-[-8px] h-10 max-w-[131px] w-full right-0 md:static rounded-md text-white font-bold text-lg"
+          >
             Enviar
           </button>
         </form>

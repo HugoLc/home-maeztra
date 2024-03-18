@@ -51,7 +51,7 @@ export function PopUp() {
 
             <input type="text" placeholder="Digite seu e-mail" />
 
-            <button className="flex bg-[#FAA500] rounded">
+            <button className="flex bg-[#FAA500] rounded" aria-label="Enviar">
               Enviar{" "}
               <Image
                 alt="send icon"

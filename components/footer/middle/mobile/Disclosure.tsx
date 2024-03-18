@@ -13,6 +13,7 @@ export function Disclosure({ title, children }: any) {
       <button
         onClick={toggleDisclosure}
         className="flex justify-between w-full bg-transparent border-0 cursor-pointer"
+        aria-label="title"
       >
         <p className="text-gray-700 text-lg font-bold">{title}</p>
         {isOpen ? (

@@ -1,7 +1,7 @@
 .shelf-container .slick-slide {
   display: flex !important;
   justify-content: center;
-  
+  height: 584px !important;
 }
 
 .shelf-container .slick-prev {
