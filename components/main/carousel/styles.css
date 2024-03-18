@@ -1,8 +1,5 @@
 /* TODO: arrumar arrows */
 
-
-
-
 .swiper-pagination-bullet {
   width: 16px !important;
   height: 16px !important;
@@ -23,6 +20,10 @@
 
 #fullbanner .next-arrow {
   right: 9vw;
+}
+
+#shelf-slider .swiper-pagination {
+  display: none;
 }
 
 .swiper-wrapper .swiper-slide {

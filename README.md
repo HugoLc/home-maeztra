@@ -1,10 +1,14 @@
-<a href="https://home-maeztra-gdyt.vercel.app/">
+<a href="https://home-maeztra.vercel.app/">
   <img alt="Site preview" src="./public/img/preview.png">
   <h1 align="center">Teste Técnico Maeztra - Hugo</h1>
 </a>
 
 <p align="center">
   Teste técnico realizado durante processo seletivo para vaga de Front End na Maeztra
+</p>
+
+<p align="center">
+  <a href="https://home-maeztra.vercel.app/"><strong>Visualize o site aqui</strong></a>
 </p>
 
 <p align="center">
@@ -31,6 +35,10 @@ Este projeto serve como uma demonstração das minhas habilidades e capacidades 
 - [Postgres](https://www.postgresql.org/) – database
 - [uploadthing](https://uploadthing.com/) – images
 - [Vercel](https://vercel.com/) – deployments
+
+## Performance
+
+<img alt="Site performance" src="./public/img/performance.png">
 
 ## Instruções de Execução do Projeto
 
